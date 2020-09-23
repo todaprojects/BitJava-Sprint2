@@ -1,9 +1,9 @@
 package lt.toda.app;
 
 class Employee {
-    String firstName;
-    String occupation;
-    int salary;
+    private String firstName;
+    private String occupation;
+    private int salary;
 
     public Employee() {
     }
