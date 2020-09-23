@@ -20,18 +20,18 @@ public class Main {
                     break;
                 }
                 case "add": {
-                    StringBuilder consoleInput = new StringBuilder("\n");
+                    Employee employee = new Employee();
 
                     System.out.print("\tenter name: ");
-                    consoleInput.append(parseInput("word")).append(",");
+                    employee.setFirstName(parseInput("word"));
 
                     System.out.print("\tenter occupation: ");
-                    consoleInput.append(parseInput("word")).append(",");
+                    employee.setOccupation(parseInput("word"));
 
                     System.out.print("\tenter salary: ");
-                    consoleInput.append(parseInput("number"));
+                    employee.setSalary(Integer.parseInt(parseInput("number")));
 
-                    appendData(dataFile, consoleInput.toString());
+                    appendData(dataFile, employee.toString());
                     break;
                 }
                 case "exit": {
